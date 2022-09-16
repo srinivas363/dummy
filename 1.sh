@@ -1,3 +1,2 @@
-echo todays date is $(date) >> $(date +%A)
-echo myname is $(hostname) >> $(date +%A)
-touch today is $(date +%A)
+echo todays date is $(date) >> teju
+echo myname is $(hostname) >> teju
