@@ -1,2 +1,2 @@
-echo todays date is $(date) >> teju
-echo myname is $(hostname) >> teju
+echo todays date is $(date) >> f1
+echo myname is $(hostname) >> f1
