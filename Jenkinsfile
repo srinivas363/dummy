@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage("git checkout"){
 				steps{
-					git branch: 'main', url: 'https://github.com/vikash-kumar01/demo-counter-app.git'
+					git branch: 'main', url: 'https://github.com/srinivas363/dummy.git'
 					}
 						}
 		}
