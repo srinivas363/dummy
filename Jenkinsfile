@@ -1,20 +1,11 @@
 pipeline{
 	agent any
 	stages{
-		stage("sonar quality check"){
-			agent{
-				docker{
-					image 'maven'
-					}
-				}
+		stage("git checkout"){
 				steps{
-					script{
-					withSonarQubeEnv(credentialsId: 'sonar-token') {
-					sh 'mvn clean package sonar:sonar'
+					git branch: 'main', url: 'https://github.com/vikash-kumar01/demo-counter-app.git'
 					}
-				}
-				}
-			}
-			}
-}
+						}
+		}
+	}
 				
