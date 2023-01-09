@@ -8,13 +8,17 @@ pipeline{
 						}
 		stage("unit testing"){
 				steps{
+					script{
 					sh 'mvn test'
 					}
+				}
 						}
 		stage("integration testing"){
 				steps{
+					script{
 					sh 'mvn verify -DskipUnitTests'
 					}
+				}
 						}		
 }
 	}
